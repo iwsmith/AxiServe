@@ -13,12 +13,12 @@
   <body>
           Printing: {{ is_printing }}
           <h2>Commands</h2>
-          <a class="btn btn-primary" href="#" role="button">Toggle Pen</a>
-          <a class="btn btn-primary" href="#" role="button">Align</a>
+          <a class="btn btn-primary" href="/toggle" role="button">Toggle Pen</a>
+          <a class="btn btn-primary" href="/align" role="button">Align</a>
         <h2>Available Files</h2>
         <ul>
         {% for file in uploads %}
-        <li>{{file}}<a class="btn btn-primary" href="#" role="button">Print</a><a class="btn btn-primary" href="/preview/{{file}}" role="button">Preview</a></li>
+        <li>{{file}}<a class="btn btn-primary" href="/print/{{file}}" role="button">Print</a><a class="btn btn-primary" href="/preview/{{file}}" role="button">Preview</a></li>
         {% endfor %}
         </ul>
         <h2>Upload</h2>
